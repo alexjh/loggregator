@@ -83,6 +83,10 @@ properties:
     description: "When connecting over TLS, don't verify certificates for syslog sink"
     default: true
 
+  doppler.tweak_locked_memory
+    description: "Enable setting locked memory limits"
+    default: true
+
   loggregator.etcd.machines:
     description: "IPs pointing to the ETCD cluster"
 

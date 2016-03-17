@@ -14,7 +14,9 @@ case $1 in
     mkdir -p $RUN_DIR
     mkdir -p $LOG_DIR
 
-    ulimit -l unlimited
+    <% if p("syslog_drain_binder.tweak_locked_memory") %>
+      ulimit -l unlimited
+    <% end %>
     ulimit -n 65536
 
     <% p("syslog_drain_binder.debug") == true ? debug_string = "--debug " : debug_string = "" %>

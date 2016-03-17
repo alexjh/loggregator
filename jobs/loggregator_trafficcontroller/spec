@@ -16,6 +16,9 @@ properties:
   traffic_controller.disable_access_control:
     description: "Traffic controller bypasses authentication with the UAA and CC"
     default: false
+  traffic_controller.tweak_locked_memory
+    description: "Enable setting locked memory limits"
+    default: true
   loggregator.outgoing_dropsonde_port:
     description: "Port for outgoing dropsonde messages"
     default: 8081

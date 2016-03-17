@@ -36,6 +36,9 @@ properties:
   syslog_drain_binder.debug:
     description: boolean value to turn on verbose logging for syslog_drain_binder
     default: false
+  syslog_drain_binder.tweak_locked_memory:
+    description: "Enable setting locked memory limits"
+    default: true
 
   cc.bulk_api_password:
     description: "password for the bulk api"
